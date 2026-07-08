@@ -1,0 +1,19 @@
+{
+  "name": "SwissMap",
+  "description": "Hiking map of Switzerland using Swisstopo tiles",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/icons/icon-56.png",
+    "112": "/icons/icon-112.png"
+  },
+  "developer": {
+    "name": "Yannik Messerli"
+  },
+  "type": "web",
+  "permissions": {
+    "systemXHR": {
+      "description": "Required to fetch map tiles and search results"
+    }
+  },
+  "orientation": "portrait"
+}
