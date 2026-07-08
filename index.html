@@ -16,6 +16,46 @@
     <ul id="search-results"></ul>
   </div>
 
+  <div id="offline-overlay">
+    <div id="offline-menu">
+      <h3>Offline Areas</h3>
+      <ul id="offline-menu-list">
+        <li class="selected" data-action="download">Download current area</li>
+        <li data-action="manage">Manage saved areas</li>
+      </ul>
+    </div>
+
+    <div id="offline-download" class="hidden">
+      <h3>Download Area</h3>
+      <div class="field">
+        <label>Radius:</label>
+        <span id="dl-radius-value">2 km</span>
+      </div>
+      <div class="field">
+        <label>Zoom levels:</label>
+        <span id="dl-zoom-value">10 - 14</span>
+      </div>
+      <div class="field">
+        <label>Save as:</label>
+        <span id="dl-target-value">New area</span>
+      </div>
+      <div id="dl-name-row" class="field">
+        <label>Name:</label>
+        <input id="dl-name-input" type="text" placeholder="Area name" nav-selectable="true">
+      </div>
+      <div id="dl-progress" class="hidden">
+        <div id="dl-progress-bar"><div id="dl-progress-fill"></div></div>
+        <span id="dl-progress-text">0%</span>
+      </div>
+    </div>
+
+    <div id="offline-manage" class="hidden">
+      <h3>Saved Areas</h3>
+      <ul id="offline-area-list"></ul>
+      <p id="no-areas-msg" class="hidden">No saved areas</p>
+    </div>
+  </div>
+
   <div id="softkeys">
     <span id="sk-left">Search</span>
     <span id="sk-center"></span>
